@@ -21,7 +21,7 @@ var jogadores = [];
 var sockets = [];
 
 
-io.on('connect', function(socket){
+io.on('connection', function(socket){
     console.log('a user connected, user id:');
 
     var jogador = new Jogador();
