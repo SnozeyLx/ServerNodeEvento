@@ -2,6 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http, {
     rejectUnauthorized: false,
+    allowEIO3: true,
     cors: {
       origin: "http://prototipo.woodyverso.com",
       methods: ["GET", "POST"],
