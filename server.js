@@ -2,7 +2,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http, {
     cors: {
-      origin: "://prototipo.woodyverso.com/",
+      origin: "http://prototipo.woodyverso.com/newSchool",
       methods: ["GET", "POST"],
       allowedHeaders: ["my-custom-header"],
       credentials: true
